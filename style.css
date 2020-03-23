@@ -1,0 +1,288 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* GENERELT */
+p,
+h1 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav a {
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #093A82;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 10vw;
+    height: 10vw;
+}
+
+/* TOPPEN */
+header {
+    width: 100vw;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #093A82;
+    color: white;
+    font-size: 2rem;
+    max-width: 93.3vw;
+}
+
+
+header nav a {
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 5vw;
+}
+
+header nav a:visited {}
+
+.hidden {
+    transform: translateX(-100%);
+    opacity: 0;
+    display: none;
+}
+
+#menuknap {
+    display: inline-block;
+    margin-right: 5vw;
+    font-family: 'Open Sans', sans-serif;
+    /*margin: 0.5rem;*/
+}
+
+#splash .pil {
+    display: none;
+}
+
+/* INDHOLD */
+/* INDHOLD FØRSTE TEKST - her er der brugt flexbox til at få billede og tekst til at ligge under hinanden i mobil-version og ved siden af hinanden i desktop-version. */
+#section_1 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+}
+
+.foto_1,
+.txt_1 {
+    flex-grow: 1;
+    flex-basis: 400px;
+}
+
+.txt_1 {
+    margin-top: 10vw;
+    margin-bottom: 2vw;
+    margin: 0 7vw;
+}
+
+.foto_1 {
+    max-width: 70vw;
+    margin: auto;
+}
+
+/* INDHOLD ANDEN TEKST - her er der brugt position relative og position absolute for at gøre det muligt at ligge teksten ovenpå billedet. */
+#section_2 {
+    margin-top: 20vw;
+    position: relative;
+    text-align: end;
+}
+
+.txt_2 {
+    position: absolute;
+    max-width: 70vw;
+    top: 10vw;
+    margin: 0 2vw 0 25vw;
+}
+
+/* Her beder jeg den om ikke at vise det billede, som ligger i classen "foto_2_2", fordi det er det billede, som skal bruges til web. */
+.foto_2_2 {
+    display: none;
+}
+
+/* DIAGRAM */
+#diagram_section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: reverse;
+}
+
+.txt_diagram,
+.diagram {
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+.txt_diagram {
+    margin: 15vw 7vw 0;
+}
+
+.diagram {
+    margin-bottom: 15vw;
+}
+
+#mus {
+    position: absolute;
+    background-color: white;
+    color: #0a9b37;
+    padding: .3em;
+    display: none;
+}
+
+#tuborgnul {
+    max-height: 400px;
+}
+
+#diagram line {
+    stroke: black;
+}
+
+.bars {
+    stroke-width: 10;
+    stroke: #093A82;
+}
+
+#diagram text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.7rem;
+}
+
+
+/* INDHOLD FJERDE TEKST */
+.txt_4 {
+    margin: 7vw;
+}
+
+@media only screen and (min-width:800px) {
+
+    #menuknap {
+        display: none;
+    }
+
+    .hidden {
+        transform: translateX(0);
+        opacity: 1;
+        display: inline-block;
+    }
+
+    header li {
+        display: inline-block;
+        letter-spacing: 1px;
+        margin-left: 2vw;
+    }
+
+    header nav {
+        max-width: 97.6vw;
+        height: 50px;
+    }
+
+    ul {
+        margin-top: 0.2em;
+        margin-right: 2rem;
+    }
+
+
+    header nav li {
+        /*        padding: 0.2rem;
+        background-color: transparent;
+        margin: 0.2rem;
+        text-decoration: none;*/
+    }
+
+    #splash img {}
+
+    #splash .pil {
+        display: block;
+        position: absolute;
+        top: 35vw;
+        left: 34vw;
+        max-width: 5vw;
+    }
+
+
+    /* INDHOLD */
+
+    #section_1 {
+        background-color: #efeded;
+        max-width: 80vw;
+        margin: auto;
+        margin-top: 2vw;
+    }
+
+    .txt_1 {
+        text-align: end;
+        margin-top: 4vw;
+    }
+
+    .foto_1 {
+        max-width: 23vw;
+        margin-right: 6vw;
+    }
+
+    /*Dette gøres for at tekst kan komme ovenpå billedet */
+    #section_2 {
+        position: relative;
+    }
+
+    .txt_2 {
+        text-align: left;
+        position: absolute;
+        left: 30vw;
+        top: 10vw;
+        right: 7vw;
+    }
+
+    /* Her beder jeg den igen om at skjule det billede, som bruges i mobilversionen og derimod vise det billede, som jeg skal bruge her i desktop versionen. */
+    .foto_2_1 {
+        display: none;
+    }
+
+    .foto_2_2 {
+        display: block;
+    }
+
+    /* DIAGRAM */
+    #diagram_section {
+        background-color: #efeded;
+        margin: 10vw;
+    }
+
+    .diagram {
+        margin-bottom: 0vw;
+        margin-top: 5vw;
+    }
+
+    .txt_diagram {
+        text-align: end;
+        margin: 12vw 0 0 4vw;
+    }
+
+
+    #section_4 {
+        background-color: #efeded;
+        max-width: 80vw;
+        margin: auto;
+        margin-top: 10vw;
+    }
+
+}
