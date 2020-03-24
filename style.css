@@ -11,7 +11,13 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    margin: 0;
+}
+
 /* GENERELT */
+
+
 p,
 h1 {
     font-family: 'Open Sans', sans-serif;
@@ -44,7 +50,9 @@ nav a {
 
 /* TOPPEN */
 header {
-    width: 100vw;
+    width: 100%;
+    width: 90px;
+    background-color: #093A82;
 }
 
 header nav {
@@ -52,7 +60,7 @@ header nav {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-end;
-    background-color: #093A82;
+
     color: white;
     font-size: 2rem;
     max-width: 93.3vw;
@@ -185,11 +193,21 @@ header nav a:visited {}
 
 
 /* INDHOLD FJERDE TEKST */
+section_4 {}
+
 .txt_4 {
-    margin: 7vw;
+    margin: 0 7vw;
 }
 
+.img_4 {}
+
+/************ Desktop ****************/
+
 @media only screen and (min-width:800px) {
+
+    section {
+        margin: 0 auto;
+    }
 
     #menuknap {
         display: none;
@@ -201,6 +219,11 @@ header nav a:visited {}
         display: inline-block;
     }
 
+    header {
+        width: 100%;
+
+    }
+
     header li {
         display: inline-block;
         letter-spacing: 1px;
@@ -208,8 +231,8 @@ header nav a:visited {}
     }
 
     header nav {
-        max-width: 97.6vw;
-        height: 50px;
+        /* width: 100vw;
+        height: 50px;*/
     }
 
     ul {
@@ -293,8 +316,25 @@ header nav a:visited {}
         margin: 12vw 0 0 4vw;
     }
 
-
     #section_4 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+
+    }
+
+    .txt_4 {
+        flex-grow: 1;
+        flex-basis: 400px;
+        margin-top: 10vw;
+        margin-bottom: 2vw;
+    }
+
+    .img_4 {
+        width: 30%;
+    }
+
+    /*    #section_4 {
         background-color: #efeded;
         max-width: 80vw;
         margin: auto;
@@ -306,30 +346,30 @@ header nav a:visited {}
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(400px, 4fr));
         grid-gap: 5px;
+    }*/
+
+
+
+
+    .pil {
+        animation-name: beat_kf;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+
     }
 
-}
 
+    @keyframes beat_kf {
+        0% {
+            transform: translateY(0);
+        }
 
-.pil {
-    animation-name: beat_kf;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+        50% {
+            transform: translateY(10px);
+        }
 
-}
-
-
-@keyframes beat_kf {
-    0% {
-        transform: translateY(0);
+        100% {
+            transform: translateY(0);
+        }
     }
-
-    50% {
-        transform: translateY(10px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
