@@ -50,11 +50,12 @@
     <section id="diagram_section">
         <div class="txt_diagram">
             <h1>Salg af alkoholfri øl</h1>
-            <p>Ser vi på grafen er det tydeligt at se, at efterspørgelsen på alkoholfri øl er steget igennem de seneste par år.</p>
+            <p>Ifølge dansk lovgivning må en øl betegnes som alkoholfri, hvis den indeholder 0,5 % alkohol eller derunder. Når loven tillader denne lille mængde alkohol, hænger det blandt andet sammen med, at hvis der er gærede sukkerstoffer i en føde- eller drikkevare, kan der forekomme en lille rest alkohol i varen. I eksempelvis en overmoden banan og i flere frugtjuicer, der ikke er lavet på koncentrat, kan man finde en smule alkohol. <br>Salget af de alkoholfrie øl er steget markant de seneste år. Hold musen over søjlen for at se præcis hvor mange liter alkoholfri øl der er blevet solgt det pågældende år. Alene det seneste år er salget steget med intet mindre end 19% og set over de seneste tre år er salget tredoblet. Siden Carlsberg Nordic blev lanceret i 2014 er tallet særligt steget fra 938.700 liter i 2014 til 2.149.700 liter i 2015. <br> En af forklaringerne på denne stigning er, at samtlige danske bryggerier er blevet bedre til at producere smagfulde alkoholfrie alternativer. Det vil Tuborg også gerne bakke op om og lancere derfor Tuborg NUL med 0.0% alkohol d. 1 maj 2020, hvor vi har fokuseret på, at den skal smage som vores velkendte pilsner.
+            </p>
         </div>
 
-        <div class="diagram">
-            <svg id="tuborgnul" viewbox="70 -20 75 250">
+        <div class="diagram_ups">
+            <svg id="tuborgnul" viewbox="70 -20 150 260">
                 <g id="diagram">
                     <!--<text x="90" y="-10">Salg af alkoholfri øl i liter</text>-->
                     <text x="20" y="0">5 mio. liter</text>
@@ -64,25 +65,31 @@
                     <text x="20" y="160">1 mio. liter</text>
                     <text x="45" y="200">0 liter</text>
 
+                    <text x="85" y="220">2015</text>
+                    <text x="120" y="220">2016</text>
+                    <text x="155" y="220">2017</text>
+                    <text x="190" y="220">2018</text>
+                    <text x="225" y="220">2019</text>
+
                     <line x1="80" x2="80" y1="200" y2="0"></line>
 
-                    <line x1="80" x2="200" y1="0" y2="0"></line>
+                    <line x1="80" x2="260" y1="0" y2="0"></line>
                     <!--<text x1="50" x2="50" y1=“0” y2="0">2016</text>-->
-                    <line x1="80" x2="200" y1="40" y2="40"></line>
-                    <line x1="80" x2="200" y1="80" y2="80"></line>
-                    <line x1="80" x2="200" y1="120" y2="120"></line>
-                    <line x1="80" x2="200" y1="160" y2="160"></line>
-                    <line x1="80" x2="200" y1="200" y2="200"></line>
+                    <line x1="80" x2="260" y1="40" y2="40"></line>
+                    <line x1="80" x2="260" y1="80" y2="80"></line>
+                    <line x1="80" x2="260" y1="120" y2="120"></line>
+                    <line x1="80" x2="260" y1="160" y2="160"></line>
+                    <line x1="80" x2="260" y1="200" y2="200"></line>
                 </g>
 
 
 
                 <g class="bars">
                     <line x1="100" x2="100" y1="0" y2="200"></line>
-                    <line x1="120" x2="120" y1="0" y2="200"></line>
-                    <line x1="140" x2="140" y1="0" y2="200"></line>
-                    <line x1="160" x2="160" y1="0" y2="200"></line>
-                    <line x1="180" x2="180" y1="0" y2="200"></line>
+                    <line x1="135" x2="135" y1="0" y2="200"></line>
+                    <line x1="170" x2="170" y1="0" y2="200"></line>
+                    <line x1="205" x2="205" y1="0" y2="200"></line>
+                    <line x1="240" x2="240" y1="0" y2="200"></line>
                 </g>
 
                 <!--Her er tallene for salg af alkoholfri øl i liter:
@@ -97,6 +104,7 @@
         </div>
 
     </section>
+
 
     <section id="section_4">
         <div class="txt_4">
@@ -143,7 +151,7 @@
 
         const values = [2.453000, 2.793000, 3.283000, 4.319000, 4.699000];
 
-        const output = document.querySelector(".diagram #mus");
+        const output = document.querySelector("#mus");
 
         document.querySelectorAll(".bars line").forEach((bar, i) => {
             bar.setAttribute("y1", 200 - values[i] * 40); // ganges med 40 får at få det til at passe med 200
@@ -154,7 +162,7 @@
 
         function vis(e) {
             console.log(e.target);
-            document.querySelector("#mus").textContent = e.target.dataset.value + " mio."; // her bestemmer du selv, hvad der skal vises
+            document.querySelector("#mus").textContent = e.target.dataset.value + ".000 liter"; // her bestemmer du selv, hvad der skal vises
             output.style.display = "block";
             window.addEventListener("mousemove", followMouse);
         }
@@ -170,8 +178,5 @@
             output.style.display = "none";
             window.removeEventListener("mousemove", followMouse);
         }
-
     </script>
-</body>
-
-</html>
+</body></html>
