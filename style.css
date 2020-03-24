@@ -131,6 +131,10 @@ header nav a:visited {}
     display: none;
 }
 
+.img_4 {
+    width: 85%;
+}
+
 /* DIAGRAM */
 #diagram_section {
     display: flex;
@@ -294,6 +298,37 @@ header nav a:visited {}
         max-width: 80vw;
         margin: auto;
         margin-top: 10vw;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 10px;
+        background: #ececec;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 4fr));
+        grid-gap: 5px;
     }
 
+}
+
+
+.pil {
+    animation-name: beat_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+
+@keyframes beat_kf {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
