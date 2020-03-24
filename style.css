@@ -100,6 +100,7 @@ header li {
     display: block;
 
 
+
     /*
 transform: translate(-10px, -175px);
 transition: .3s;
@@ -119,6 +120,26 @@ transition-timing-function: steps(5, jump-start);*/
     margin-right: 5vw;
     font-family: 'Open Sans', sans-serif;
     /*margin: 0.5rem;*/
+}
+
+@media only screen and (min-width:1300px) {
+
+    header li {
+        display: flex;
+        height: 30px;
+        padding: 0px;
+
+    }
+
+    header ul {
+        position: absolute;
+        top: 0vw;
+        right: -5vw;
+        padding: 0px;
+
+
+    }
+
 }
 
 #splash .pil {
