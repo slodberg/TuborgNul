@@ -162,7 +162,7 @@
 
         function vis(e) {
             console.log(e.target);
-            document.querySelector("#mus").textContent = e.target.dataset.value + " mio."; // her bestemmer du selv, hvad der skal vises
+            document.querySelector("#mus").textContent = e.target.dataset.value + ".000 liter"; // her bestemmer du selv, hvad der skal vises
             output.style.display = "block";
             window.addEventListener("mousemove", followMouse);
         }
