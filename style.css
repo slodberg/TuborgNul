@@ -47,20 +47,6 @@ nav a {
     font-size: .8em;
 }
 
-/*.footer {
-    position: relative;
-    text-align: center;
-}
-
-.footer_tekst {
-    position: absolute;
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 999;
-}*/
 
 /* TOPPEN */
 header {
@@ -130,13 +116,13 @@ header nav a:visited {}
 }
 
 .foto_1 {
-    max-width: 70vw;
+    max-width: 60vw;
     margin: auto;
 }
 
 /* INDHOLD ANDEN TEKST - her er der brugt position relative og position absolute for at gøre det muligt at ligge teksten ovenpå billedet. */
 #section_2 {
-    margin-top: 20vw;
+    margin-top: 10vw;
     position: relative;
     text-align: end;
 }
@@ -154,7 +140,8 @@ header nav a:visited {}
 }
 
 .img_4 {
-    width: 85%;
+    width: 55%;
+    margin: auto;
 }
 
 /* DIAGRAM */
@@ -281,7 +268,7 @@ section_4 {}
     }
 
     .footer_tekst p {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 
     /* INDHOLD */
@@ -306,7 +293,6 @@ section_4 {}
     /*Dette gøres for at tekst kan komme ovenpå billedet */
     #section_2 {
         position: relative;
-
     }
 
     .txt_2 {
