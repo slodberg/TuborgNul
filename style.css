@@ -20,22 +20,25 @@ nav a {
     font-family: 'Open Sans', sans-serif;
 }
 
-footer {
+.footer {
     font-family: 'Open Sans', sans-serif;
     background-color: #093A82;
     color: white;
-    text-align: center;
-    vertical-align: middle;
+    /* text-align: center;*/
+    /*vertical-align: middle;*/
     line-height: 10vw;
     height: 10vw;
     position: relative;
 }
+
+
 
 .footer_tekst {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 999;
 }
 
 /* TOPPEN */
