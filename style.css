@@ -28,6 +28,14 @@ footer {
     vertical-align: middle;
     line-height: 10vw;
     height: 10vw;
+    position: relative;
+}
+
+.footer_tekst {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* TOPPEN */
