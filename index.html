@@ -50,10 +50,11 @@
     <section id="diagram_section">
         <div class="txt_diagram">
             <h1>Salg af alkoholfri øl</h1>
-            <p>Ser vi på grafen er det tydeligt at se, at efterspørgelsen på alkoholfri øl er steget igennem de seneste par år.</p>
+            <p>Ifølge dansk lovgivning må en øl betegnes som alkoholfri, hvis den indeholder 0,5 % alkohol eller derunder. Når loven tillader denne lille mængde alkohol, hænger det blandt andet sammen med, at hvis der er gærede sukkerstoffer i en føde- eller drikkevare, kan der forekomme en lille rest alkohol i varen. I eksempelvis en overmoden banan og i flere frugtjuicer, der ikke er lavet på koncentrat, kan man finde en smule alkohol. <br>Salget af de alkoholfrie øl er steget markant de seneste år. Hold musen over søjlen for at se præcis hvor mange liter alkoholfri øl der er blevet solgt det pågældende år. Alene det seneste år er salget steget med intet mindre end 19% og set over de seneste tre år er salget tredoblet. Siden Carlsberg Nordic blev lanceret i 2014 er tallet særligt steget fra 938.700 liter i 2014 til 2.149.700 liter i 2015. <br> En af forklaringerne på denne stigning er, at samtlige danske bryggerier er blevet bedre til at producere smagfulde alkoholfrie alternativer. Det vil Tuborg også gerne bakke op om og lancere derfor Tuborg NUL med 0.0% alkohol d. 1 maj 2020, hvor vi har fokuseret på, at den skal smage som vores velkendte pilsner.
+            </p>
         </div>
 
-        <div class="diagram">
+        <div class="diagram_ups">
             <svg id="tuborgnul" viewbox="70 -20 75 250">
                 <g id="diagram">
                     <!--<text x="90" y="-10">Salg af alkoholfri øl i liter</text>-->
@@ -97,6 +98,7 @@
         </div>
 
     </section>
+
 
     <section id="section_4">
         <div class="txt_4">
@@ -143,7 +145,7 @@
 
         const values = [2.453000, 2.793000, 3.283000, 4.319000, 4.699000];
 
-        const output = document.querySelector(".diagram #mus");
+        const output = document.querySelector("#mus");
 
         document.querySelectorAll(".bars line").forEach((bar, i) => {
             bar.setAttribute("y1", 200 - values[i] * 40); // ganges med 40 får at få det til at passe med 200
@@ -170,8 +172,5 @@
             output.style.display = "none";
             window.removeEventListener("mousemove", followMouse);
         }
-
     </script>
-</body>
-
-</html>
+</body></html>
