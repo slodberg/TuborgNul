@@ -143,7 +143,7 @@ header nav a:visited {}
 
 #mus {
     position: absolute;
-    background-color: white;
+    background-color: yellow;
     color: #0a9b37;
     padding: .3em;
     display: none;

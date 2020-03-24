@@ -35,7 +35,7 @@ document.querySelectorAll(".bars line").forEach((bar, i) => {
 
 function vis(e) {
     console.log(e.target);
-    output.textContent = e.target.dataset.value + " mio."; // her bestemmer du selv, hvad der skal vises
+    document.querySelector("#mus").textContent = e.target.dataset.value + " mio."; // her bestemmer du selv, hvad der skal vises
     output.style.display = "block";
     window.addEventListener("mousemove", followMouse);
 }
