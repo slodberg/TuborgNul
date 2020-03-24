@@ -21,14 +21,25 @@ nav a {
     font-family: 'Open Sans', sans-serif;
 }
 
-footer {
+.footer {
     font-family: 'Open Sans', sans-serif;
     background-color: #093A82;
     color: white;
-    text-align: center;
-    vertical-align: middle;
+    /* text-align: center;*/
+    /*vertical-align: middle;*/
     line-height: 10vw;
     height: 10vw;
+    position: relative;
+}
+
+
+
+.footer_tekst {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
 }
 
 /* TOPPEN */
@@ -119,6 +130,10 @@ header nav a:visited {}
 /* Her beder jeg den om ikke at vise det billede, som ligger i classen "foto_2_2", fordi det er det billede, som skal bruges til web. */
 .foto_2_2 {
     display: none;
+}
+
+.img_4 {
+    width: 85%;
 }
 
 /* DIAGRAM */
@@ -284,6 +299,37 @@ header nav a:visited {}
         max-width: 80vw;
         margin: auto;
         margin-top: 10vw;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 10px;
+        background: #ececec;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 4fr));
+        grid-gap: 5px;
     }
 
+}
+
+
+.pil {
+    animation-name: beat_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+
+@keyframes beat_kf {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
