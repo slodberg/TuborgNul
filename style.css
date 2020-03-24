@@ -27,26 +27,26 @@ nav a {
     font-family: 'Open Sans', sans-serif;
 }
 
-.footer {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #093A82;
-    color: white;
-    /* text-align: center;*/
-    /*vertical-align: middle;*/
-    line-height: 10vw;
-    height: 10vw;
+/* Container holding the image and the text */
+.container {
     position: relative;
+    text-align: center;
 }
-
-
 
 .footer_tekst {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 999;
+    bottom: 10px;
+    right: 20px;
+    left: 50px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
+.footer_tekst p {
+    font-size: .8em;
+}
+
 
 /* TOPPEN */
 header {
@@ -116,13 +116,13 @@ header nav a:visited {}
 }
 
 .foto_1 {
-    max-width: 70vw;
+    max-width: 60vw;
     margin: auto;
 }
 
 /* INDHOLD ANDEN TEKST - her er der brugt position relative og position absolute for at gøre det muligt at ligge teksten ovenpå billedet. */
 #section_2 {
-    margin-top: 20vw;
+    margin-top: 10vw;
     position: relative;
     text-align: end;
 }
@@ -140,7 +140,8 @@ header nav a:visited {}
 }
 
 .img_4 {
-    width: 85%;
+    width: 55%;
+    margin: auto;
 }
 
 /* DIAGRAM */
@@ -198,7 +199,14 @@ section_4 {}
     margin: 0 7vw;
 }
 
-.img_4 {}
+/*--------VIDEO-------------*/
+#video {}
+
+#video h1 {}
+
+.video_text {}
+
+.video {}
 
 /************ Desktop ****************/
 
@@ -260,7 +268,15 @@ section_4 {}
         max-width: 5vw;
     }
 
-    /*-----footer------------*/
+    /*-----footer---desktop---------*/
+
+    .footer_tekst {
+        bottom: 25px;
+    }
+
+    .footer_tekst p {
+        font-size: 1.5em;
+    }
 
     /* INDHOLD */
 
@@ -284,7 +300,6 @@ section_4 {}
     /*Dette gøres for at tekst kan komme ovenpå billedet */
     #section_2 {
         position: relative;
-
     }
 
     .txt_2 {
@@ -380,4 +395,30 @@ section_4 {}
             transform: translateY(0);
         }
     }
+}
+
+#video {
+    max-width: 80vw;
+    background-color: #efeded;
+    margin: 10vw;
+    margin-top: 5vw;
+
+}
+
+#video h1 {
+    padding-left: 10rem;
+    padding-top: 3rem;
+}
+
+.video_text {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 3rem;
+}
+
+.video_file {
+    background-color: black;
+    height: 40vh;
+    width: 35vw;
+    margin-left: 22vw;
 }
