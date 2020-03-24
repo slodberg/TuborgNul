@@ -51,7 +51,7 @@ nav a {
 /* TOPPEN */
 header {
     width: 100%;
-    width: 90px;
+    height: 50px;
     background-color: #093A82;
 }
 
@@ -60,7 +60,6 @@ header nav {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-end;
-
     color: white;
     font-size: 2rem;
     max-width: 93.3vw;
@@ -205,6 +204,7 @@ section_4 {}
 
 @media only screen and (min-width:800px) {
 
+    /*----Generalet-----*/
     section {
         margin: 0 auto;
     }
@@ -248,7 +248,9 @@ section_4 {}
         text-decoration: none;*/
     }
 
-    #splash img {}
+    #splash img {
+        width: 100%
+    }
 
     #splash .pil {
         display: block;
@@ -258,6 +260,7 @@ section_4 {}
         max-width: 5vw;
     }
 
+    /*-----footer------------*/
 
     /* INDHOLD */
 
@@ -281,6 +284,7 @@ section_4 {}
     /*Dette gøres for at tekst kan komme ovenpå billedet */
     #section_2 {
         position: relative;
+
     }
 
     .txt_2 {
@@ -304,6 +308,7 @@ section_4 {}
     #diagram_section {
         background-color: #efeded;
         margin: 10vw;
+
     }
 
     .diagram {
@@ -317,21 +322,25 @@ section_4 {}
     }
 
     #section_4 {
+        max-width: 80vw;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row-reverse;
-
+        background-color: #efeded;
+        margin: auto;
+        margin-top: 2vw;
     }
 
     .txt_4 {
         flex-grow: 1;
         flex-basis: 400px;
-        margin-top: 10vw;
+        margin-top: 5vw;
         margin-bottom: 2vw;
     }
 
     .img_4 {
         width: 30%;
+        margin-left: 2vw;
     }
 
     /*    #section_4 {
@@ -347,8 +356,6 @@ section_4 {}
         grid-template-columns: repeat(auto-fill, minmax(400px, 4fr));
         grid-gap: 5px;
     }*/
-
-
 
 
     .pil {
@@ -373,3 +380,4 @@ section_4 {}
             transform: translateY(0);
         }
     }
+}
