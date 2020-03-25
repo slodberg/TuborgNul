@@ -203,7 +203,7 @@ transition-timing-function: steps(5, jump-start);*/
 }
 
 .txt_diagram,
-.diagram {
+.diagram_ups {
     flex-grow: 1;
     flex-basis: 500px;
 }
@@ -212,14 +212,14 @@ transition-timing-function: steps(5, jump-start);*/
     margin: 15vw 7vw 0;
 }
 
-.diagram {
+.diagram_ups {
     margin-bottom: 15vw;
 }
 
 #mus {
-    position: absolute;
-    background-color: yellow;
-    color: #0a9b37;
+    position: fixed;
+    background-color: #093A82;
+    color: #fbc277;
     padding: .3em;
     display: none;
 }
@@ -377,14 +377,14 @@ section_4 {}
 
     }
 
-    .diagram {
+    .diagram_ups {
         margin-bottom: 0vw;
         margin-top: 5vw;
     }
 
     .txt_diagram {
         text-align: end;
-        margin: 12vw 0 0 4vw;
+        margin: 2vw 0 0 4vw;
     }
 
     #section_4 {
