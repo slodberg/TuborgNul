@@ -27,7 +27,7 @@ nav a {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* Container holding the image and the text */
+/* FOOTER - Container holding the image and the text */
 .container {
     position: relative;
     text-align: center;
@@ -268,10 +268,6 @@ section_4 {}
 }
 
 
-
-
-
-
 /************** IPAD *****************/
 @media only screen and (min-width:700px) {
     .footer_tekst {
@@ -284,15 +280,7 @@ section_4 {}
     .footer_tekst p {
         font-size: 1rem;
     }
-
 }
-
-
-
-
-
-
-
 
 /************ Desktop ****************/
 
@@ -324,23 +312,24 @@ section_4 {}
         margin-left: 2vw;
     }
 
-    header nav {
-        /* width: 100vw;
-        height: 50px;*/
-    }
+    /*   header nav {
+       width: 100vw;
+       height: 50px;
+   }*/
 
     ul {
-        margin-top: 0.2em;
-        margin-right: 2rem;
+        margin-top: 0em;
+        margin-right: 1rem;
     }
-
 
     header nav li {
-        /*        padding: 0.2rem;
-        background-color: transparent;
-        margin: 0.2rem;
-        text-decoration: none;*/
+        padding: 0.2rem;
+        /*background-color: transparent;*/
+        /*margin: 0.2rem;*/
+        text-decoration: none;
     }
+
+    /*--------splash---------------*/
 
     #splash img {
         width: 100%
@@ -354,11 +343,6 @@ section_4 {}
         max-width: 5vw;
     }
 
-
-
-
-
-
     /*-----footer---desktop---------*/
 
     .footer_tekst {
@@ -368,9 +352,6 @@ section_4 {}
     .footer_tekst p {
         font-size: 1.5em;
     }
-
-
-
 
 
     /* INDHOLD */
@@ -413,11 +394,6 @@ section_4 {}
     .foto_2_2 {
         display: block;
     }
-
-
-
-
-
 
     /* DIAGRAM */
     #diagram_section {
@@ -478,7 +454,6 @@ section_4 {}
         animation-duration: 1s;
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
-
     }
 
 
