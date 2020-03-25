@@ -49,6 +49,23 @@ nav a {
     font-size: .8em;
 }
 
+#icons {
+    position: absolute;
+    margin-top: 5vw;
+}
+
+.insta {
+    margin-top: 2vw;
+    margin-left: 4vw;
+    width: 5%;
+}
+
+.facebook {
+    margin-top: -5.8vw;
+    margin-left: 12vw;
+    width: 4.5%;
+}
+
 
 /* TOPPEN */
 header {
@@ -124,21 +141,7 @@ transition-timing-function: steps(5, jump-start);*/
     /*margin: 0.5rem;*/
 }
 
-@media only screen and (min-width:1300px) {
 
-    header li {
-        display: flex;
-        height: 30px;
-        padding: 0px;
-    }
-
-    header ul {
-        position: absolute;
-        top: 0vw;
-        right: -5vw;
-        padding: 0px;
-    }
-}
 
 #splash .pil {
     display: none;
@@ -282,6 +285,22 @@ section_4 {}
     }
 }
 
+#icons {
+    margin-top: 8vw;
+}
+
+.insta {
+    margin-top: 2vw;
+    margin-left: 5vw;
+    width: 8%;
+}
+
+.facebook {
+    margin-top: -5.3vw;
+    margin-left: 12vw;
+    width: 7.3%;
+}
+
 /************ Desktop ****************/
 
 @media only screen and (min-width:800px) {
@@ -303,7 +322,6 @@ section_4 {}
 
     header {
         width: 100%;
-
     }
 
     header li {
@@ -346,13 +364,28 @@ section_4 {}
     /*-----footer---desktop---------*/
 
     .footer_tekst {
-        left: 30vw;
+        left: 25vw;
     }
 
     .footer_tekst p {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 
+    #icons {
+        margin-top: 8vw;
+    }
+
+    .insta {
+        margin-top: 2vw;
+        margin-left: 5vw;
+        width: 8%;
+    }
+
+    .facebook {
+        margin-top: -4.2vw;
+        margin-left: 10.5vw;
+        width: 7.3%;
+    }
 
     /* INDHOLD */
 
@@ -510,4 +543,37 @@ section_4 {}
         margin-bottom: 2vw;
     }
 
+}
+
+@media only screen and (min-width:1300px) {
+
+
+    header li {
+        display: inline-block;
+        height: 30px;
+        padding: 0px;
+    }
+
+    header ul {
+        position: absolute;
+        top: 0vw;
+        /*right: -5vw;*/
+        padding: 0px;
+    }
+
+    .footer_tekst p {
+        font-size: 1.8em;
+    }
+
+    .insta {
+        margin-top: 4vw;
+        margin-left: 6vw;
+        width: 11%;
+    }
+
+    .facebook {
+        margin-top: -4.4vw;
+        margin-left: 12vw;
+        width: 10%;
+    }
 }
