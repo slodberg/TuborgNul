@@ -51,11 +51,13 @@ nav a {
 
 #icons {
     position: absolute;
-    margin-top: 5vw;
+    margin-top: 4vw;
+    width: 80vw;
+
 }
 
 .insta {
-    margin-top: 2vw;
+    margin-top: 9vw;
     margin-left: 4vw;
     width: 5%;
 }
@@ -286,7 +288,8 @@ section_4 {}
 }
 
 #icons {
-    margin-top: 8vw;
+    margin-top: 6vw;
+    width: %;
 }
 
 .insta {
@@ -296,7 +299,7 @@ section_4 {}
 }
 
 .facebook {
-    margin-top: -5.3vw;
+    margin-top: -5vw;
     margin-left: 12vw;
     width: 7.3%;
 }
@@ -373,11 +376,12 @@ section_4 {}
 
     #icons {
         margin-top: 8vw;
+        width: 55%;
     }
 
     .insta {
         margin-top: 2vw;
-        margin-left: 5vw;
+        margin-left: 3vw;
         width: 8%;
     }
 
