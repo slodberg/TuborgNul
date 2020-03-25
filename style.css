@@ -35,12 +35,14 @@ nav a {
 
 .footer_tekst {
     position: absolute;
-    bottom: 10px;
+    color: white;
+    bottom: 0px;
+    left: 10vw;
+    /*
     right: 20px;
     left: 50px;
-    color: white;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 20px;*/
 }
 
 .footer_tekst p {
@@ -128,7 +130,6 @@ transition-timing-function: steps(5, jump-start);*/
         display: flex;
         height: 30px;
         padding: 0px;
-
     }
 
     header ul {
@@ -136,10 +137,7 @@ transition-timing-function: steps(5, jump-start);*/
         top: 0vw;
         right: -5vw;
         padding: 0px;
-
-
     }
-
 }
 
 #splash .pil {
@@ -253,11 +251,48 @@ section_4 {}
 /*--------VIDEO-------------*/
 #video {}
 
-#video h1 {}
+#video h1 {
+    margin: 10vw 7vw 0;
+}
 
-.video_text {}
+.video_text {
+    margin: 0 7vw 10vw;
+}
 
-.video {}
+.video_file {
+    background-color: black;
+    height: 30vh;
+    width: 70vw;
+    margin: auto;
+    margin-bottom: 15vw;
+}
+
+
+
+
+
+
+/************** IPAD *****************/
+@media only screen and (min-width:700px) {
+    .footer_tekst {
+        position: absolute;
+        color: white;
+        bottom: 3vw;
+        left: 25vw;
+    }
+
+    .footer_tekst p {
+        font-size: 1rem;
+    }
+
+}
+
+
+
+
+
+
+
 
 /************ Desktop ****************/
 
@@ -319,15 +354,24 @@ section_4 {}
         max-width: 5vw;
     }
 
+
+
+
+
+
     /*-----footer---desktop---------*/
 
     .footer_tekst {
-        bottom: 25px;
+        left: 30vw;
     }
 
     .footer_tekst p {
         font-size: 1.5em;
     }
+
+
+
+
 
     /* INDHOLD */
 
@@ -369,6 +413,11 @@ section_4 {}
     .foto_2_2 {
         display: block;
     }
+
+
+
+
+
 
     /* DIAGRAM */
     #diagram_section {
@@ -446,30 +495,44 @@ section_4 {}
             transform: translateY(0);
         }
     }
-}
 
-#video {
-    max-width: 80vw;
-    background-color: #efeded;
-    margin: 10vw;
-    margin-top: 5vw;
+    #video {
+        background-color: #efeded;
+        max-width: 80vw;
+        margin: auto;
+        margin-top: 5vw;
+        margin-bottom: 15vw;
+        padding-bottom: 1vw;
+        /*
+        max-width: 80vw;
+        background-color: #efeded;
+        margin: 10vw;
+        margin-top: 5vw;*/
+    }
 
-}
+    #video h1 {
+        max-width: 60vw;
+        margin: auto;
+        padding-top: 2vw;
+        /*
+        padding-left: 10rem;
+        padding-top: 3rem;*/
+    }
 
-#video h1 {
-    padding-left: 10rem;
-    padding-top: 3rem;
-}
+    .video_text {
+        max-width: 60vw;
+        margin: auto;
+        /*
+        margin-left: 10rem;
+        margin-right: 10rem;
+        margin-bottom: 3rem;*/
+    }
 
-.video_text {
-    margin-left: 10rem;
-    margin-right: 10rem;
-    margin-bottom: 3rem;
-}
+    .video_file {
+        background-color: black;
+        height: 40vh;
+        width: 35vw;
+        margin-bottom: 2vw;
+    }
 
-.video_file {
-    background-color: black;
-    height: 40vh;
-    width: 35vw;
-    margin-left: 22vw;
 }
