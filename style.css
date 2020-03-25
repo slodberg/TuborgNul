@@ -52,7 +52,8 @@ nav a {
 #icons {
     position: absolute;
     margin-top: -3vw;
-    width: 160vw;
+    max-width: 650px;
+
 
 }
 
